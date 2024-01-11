@@ -1,0 +1,39 @@
+.name {
+    position: absolute;
+    top: 2em;
+    left: 5em;
+    width: 0;
+}
+
+.name_lrg {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.name_smll {
+    font-size: .5em;
+    text-wrap: nowrap;
+}
+
+.home_links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-left: 15%;
+}
+
+.home_link {
+    font-size: 1.5em;
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .8s;
+}
+
+.home_link:hover {
+    color: #171616;
+    transition: .8s;
+    font-size: 30px;
+}
