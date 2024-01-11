@@ -1,18 +1,35 @@
+import React from "react"
+import transition from "../transition"
+import styles from "./Home.module.css"
+import { Link } from "react-router-dom"
+
 const Home = () => {
     return (
-        <div>
-            <div className="home-bg"></div>
-            <div className="home-title">
-                <h1>Home</h1>
-                <h2>
-                    Hi, i'm Leo.
-                    I'm a front-end and back-end developer and passionate about programming,
-                    i create websites, games, apps. Everything I can bring to life through
-                    codes.
-                </h2>
+        <div className={styles.home_page}>
+            <div className={styles.name}>
+                <p className={styles.name_lrg}>Leon
+                    ardo
+                    Rodr
+                    igues
+                </p>
+                <p className={styles.name_smll}>Leonardo Rodrigues</p>
+            </div>
+
+            <h1>Portifolio</h1>
+
+            <div className={styles.home_links}>
+                <div>
+                    <Link className={styles.home_link} to="/initial">Initial</Link>
+                </div>
+                <div>
+                    <Link className={styles.home_link} to="/about">about</Link>
+                </div>
+                <div>
+                    <Link className={styles.home_link} to="/contact">contact</Link>
+                </div>
             </div>
         </div>
     )
 }
 
-export default Home
+export default transition(Home)
