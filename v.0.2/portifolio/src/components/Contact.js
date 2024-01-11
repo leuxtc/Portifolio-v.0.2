@@ -1,10 +1,14 @@
+import React from "react"
+import transition from "../transition"
+import Navbar from "./Navbar"
+
 const Contact = () => {
     return (
         <div>
+            <Navbar />
             <h1>Contact</h1>
-            <h2>You can contact me on any of these sites</h2>
         </div>
     )
 }
 
-export default Contact
+export default transition(Contact)
